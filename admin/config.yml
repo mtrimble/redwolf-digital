@@ -1,0 +1,147 @@
+# =====================================================
+# REDWOLF DIGITAL — DECAP CMS CONFIGURATION
+# =====================================================
+# Decap CMS (formerly Netlify CMS) — Git-based headless CMS
+# Connected to Netlify Identity for authentication
+# All content is stored as flat files in the repository
+# =====================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Media uploads — stored in /assets/images/
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+# Site URL for preview links
+site_url: "https://redwolfdigital.com"
+
+# =====================================================
+# COLLECTIONS
+# =====================================================
+
+collections:
+
+  # ---- BLOG POSTS ----
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "blog/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "html"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Local SEO", value: "local-seo" }
+          - { label: "Paid Advertising", value: "paid-advertising" }
+          - { label: "Social Media", value: "social-media" }
+          - { label: "Content Marketing", value: "content-marketing" }
+          - { label: "Digital Strategy", value: "digital-strategy" }
+      - { label: "Excerpt / Summary", name: "excerpt", widget: "text", hint: "150-160 characters for best SEO results" }
+      - { label: "SEO: Page Title", name: "seo_title", widget: "string", required: false, hint: "Defaults to post title if blank" }
+      - { label: "SEO: Meta Description", name: "meta_description", widget: "text", required: false, hint: "150-160 characters" }
+      - { label: "Author", name: "author", widget: "string", default: "RedWolf Digital" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ---- HOME PAGE ----
+  - name: "home"
+    label: "Home Page"
+    files:
+      - label: "Home Page Content"
+        name: "home"
+        file: "src/_data/home.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", default: "Hunt Down Your Growth Online." }
+          - { label: "Hero Subheadline", name: "hero_subheadline", widget: "text", default: "20+ years of digital marketing expertise, rooted in Forney, Texas." }
+          - { label: "Hero CTA 1 Text", name: "hero_cta1_text", widget: "string", default: "Start a Project" }
+          - { label: "Hero CTA 2 Text", name: "hero_cta2_text", widget: "string", default: "Explore Services" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - { label: "SEO: Page Title", name: "seo_title", widget: "string", default: "RedWolf Digital — Forney, TX Digital Marketing Agency" }
+          - { label: "SEO: Meta Description", name: "meta_description", widget: "text", default: "RedWolf Digital is a full-service digital marketing agency based in Forney, TX." }
+
+  # ---- ABOUT PAGE ----
+  - name: "about"
+    label: "About Page"
+    files:
+      - label: "About Page Content"
+        name: "about"
+        file: "src/_data/about.json"
+        fields:
+          - { label: "Page Headline", name: "headline", widget: "string", default: "The Pack Behind Your Growth." }
+          - { label: "Founder Headline", name: "founder_headline", widget: "string", default: "Marc Trimble" }
+          - { label: "Founder Bio (Paragraph 1)", name: "bio_p1", widget: "text" }
+          - { label: "Founder Bio (Paragraph 2)", name: "bio_p2", widget: "text" }
+          - { label: "Founder Bio (Paragraph 3)", name: "bio_p3", widget: "text" }
+          - { label: "Founder Photo", name: "founder_photo", widget: "image", required: false }
+          - { label: "Founder Photo Alt Text", name: "founder_photo_alt", widget: "string", default: "Marc Trimble, Founder of RedWolf Digital" }
+          - { label: "SEO: Page Title", name: "seo_title", widget: "string" }
+          - { label: "SEO: Meta Description", name: "meta_description", widget: "text" }
+
+  # ---- SERVICES PAGE ----
+  - name: "services"
+    label: "Services Page"
+    files:
+      - label: "Services Page Content"
+        name: "services"
+        file: "src/_data/services.json"
+        fields:
+          - { label: "Page Headline", name: "headline", widget: "string", default: "Full-Service Digital Marketing Solutions" }
+          - { label: "Page Subheadline", name: "subheadline", widget: "text" }
+          - { label: "SEO: Page Title", name: "seo_title", widget: "string" }
+          - { label: "SEO: Meta Description", name: "meta_description", widget: "text" }
+
+  # ---- CONTACT PAGE ----
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - label: "Contact Page Content"
+        name: "contact"
+        file: "src/_data/contact.json"
+        fields:
+          - { label: "Page Headline", name: "headline", widget: "string", default: "Let's Talk About Your Business." }
+          - { label: "Page Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Address", name: "address", widget: "string", default: "Forney, Texas 75126" }
+          - { label: "Response Time", name: "response_time", widget: "string", default: "Within 1 business day" }
+          - { label: "SEO: Page Title", name: "seo_title", widget: "string" }
+          - { label: "SEO: Meta Description", name: "meta_description", widget: "text" }
+
+  # ---- GLOBAL SITE SETTINGS ----
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Global Settings"
+        name: "global"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Site Name", name: "name", widget: "string", default: "RedWolf Digital" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "Hunt Down Your Growth Online." }
+          - { label: "Site URL", name: "url", widget: "string", default: "https://redwolfdigital.com" }
+          - { label: "Business Address", name: "address", widget: "string", default: "Forney, Texas 75126" }
+          - { label: "Service Area Description", name: "service_area", widget: "string", default: "Forney, TX — Serving DFW & Nationwide" }
+          - { label: "Contact Form Email", name: "contact_email", widget: "string", default: "marc.trimble@gmail.com" }
+          - label: "Footer Tagline"
+            name: "footer_tagline"
+            widget: "text"
+            default: "Enterprise-level digital marketing for local and regional businesses. Based in Forney, TX — hunting down growth online since 2004."
+          - label: "Google Analytics ID"
+            name: "ga_id"
+            widget: "string"
+            required: false
+            hint: "Your GA4 Measurement ID (G-XXXXXXXXXX)"

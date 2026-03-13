@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <!-- Wolf head silhouette -->
+  <g transform="translate(4, 4)">
+    <!-- Ears -->
+    <polygon points="30,8 18,32 42,28" fill="#E31B1B"/>
+    <polygon points="56,6 44,30 68,28" fill="#E31B1B"/>
+    <!-- Head -->
+    <ellipse cx="44" cy="42" rx="26" ry="22" fill="#E31B1B"/>
+    <!-- Snout -->
+    <ellipse cx="44" cy="56" rx="12" ry="8" fill="#B01414"/>
+    <!-- Eyes -->
+    <circle cx="34" cy="38" r="4" fill="#080808"/>
+    <circle cx="54" cy="38" r="4" fill="#080808"/>
+    <circle cx="35.5" cy="36.5" r="1.5" fill="white"/>
+    <circle cx="55.5" cy="36.5" r="1.5" fill="white"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="88" y="28" font-family="'Bebas Neue', sans-serif" font-size="22" fill="#E31B1B" letter-spacing="2">REDWOLF</text>
+  <text x="88" y="52" font-family="'Bebas Neue', sans-serif" font-size="18" fill="#f0f0f0" letter-spacing="3">DIGITAL</text>
+  <line x1="88" y1="56" x2="192" y2="56" stroke="#E31B1B" stroke-width="1.5" opacity="0.4"/>
+</svg>

@@ -1,0 +1,80 @@
+# =====================================================
+# REDWOLF DIGITAL — NETLIFY CONFIGURATION
+# =====================================================
+
+[build]
+  publish = "."
+  command = "echo 'Static site — no build step required'"
+
+# ---- FUNCTIONS ----
+[functions]
+  directory = "netlify/functions"
+
+# ---- SCHEDULED FUNCTIONS ----
+# Blog auto-generation: Monday & Thursday at 8am CT (14:00 UTC)
+[functions."generate-blog"]
+  schedule = "0 14 * * 1,4"
+
+# ---- HEADERS ----
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, s-maxage=86400"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, s-maxage=86400"
+
+# ---- REDIRECTS ----
+# Clean URLs: /about → /about/
+[[redirects]]
+  from = "/services"
+  to = "/services/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301
+
+# Service area redirects
+[[redirects]]
+  from = "/forney"
+  to = "/services/forney/"
+  status = 301
+
+[[redirects]]
+  from = "/rockwall"
+  to = "/services/rockwall/"
+  status = 301
+
+# 404 fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

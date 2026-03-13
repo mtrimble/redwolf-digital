@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block CMS admin from search engines
+Disallow: /admin/
+
+Sitemap: https://redwolfdigital.com/sitemap.xml

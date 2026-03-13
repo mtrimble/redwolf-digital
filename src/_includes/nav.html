@@ -1,0 +1,32 @@
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="RedWolf Digital — Home">
+      <img src="/assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='/assets/images/logo-placeholder.svg'">
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+
+    <div class="nav__cta">
+      <a href="/contact/" class="btn btn--primary">Get Started</a>
+    </div>
+
+    <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="/services/">Services</a>
+  <a href="/about/">About</a>
+  <a href="/blog/">Blog</a>
+  <a href="/contact/">Contact</a>
+  <a href="/contact/" class="btn btn--primary" style="margin-top: 1rem; text-align: center; justify-content: center;">Get Started</a>
+</nav>

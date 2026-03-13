@@ -1,0 +1,21 @@
+{
+  "name": "redwolf-digital",
+  "version": "1.0.0",
+  "description": "RedWolf Digital — Full-Service Digital Marketing Agency, Forney, TX",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "build": "echo 'Static site — no build step required'",
+    "test": "echo 'No tests configured'"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["digital-marketing", "local-seo", "forney-tx", "dfw"],
+  "author": "RedWolf Digital",
+  "license": "UNLICENSED"
+}

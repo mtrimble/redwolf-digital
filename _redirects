@@ -1,0 +1,12 @@
+# Netlify _redirects file
+/services  /services/  301
+/about     /about/     301
+/blog      /blog/      301
+/contact   /contact/   301
+/forney    /services/forney/    301
+/rockwall  /services/rockwall/  301
+/terrell   /services/terrell/   301
+/heath     /services/heath/     301
+/fate      /services/fate/      301
+/kaufman   /services/kaufman/   301
+/mesquite  /services/mesquite/  301
