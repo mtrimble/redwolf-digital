@@ -73,8 +73,4 @@
   to = "/services/rockwall/"
   status = 301
 
-# 404 fallback
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 404
+# (404 catchall removed -- interfered with Netlify Forms POST handling)
