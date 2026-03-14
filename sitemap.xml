@@ -66,7 +66,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://redwolfdigital.com/services/tyler/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/services/maybank/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://redwolfdigital.com/blog/posts/forney-local-seo-guide.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/blog/posts/facebook-ads-local-business.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/blog/posts/google-business-profile-optimization.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/blog/posts/blog-content-strategy-local-business.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/blog/posts/website-design-conversion-rate.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://redwolfdigital.com/blog/posts/social-media-local-business-dfw.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

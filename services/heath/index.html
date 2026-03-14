@@ -27,34 +27,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
 <style>
 /* =====================================================
-   REDWOLF DIGITAL — BASE CSS
+   REDWOLF DIGITAL  --  BASE CSS
    Dark agency aesthetic: #080808 bg, #E31B1B accent
    Bebas Neue headings, DM Sans body
    ===================================================== */
 
 :root {
   /* Brand Colors */
-  --color-bg:           #080808;
-  --color-surface:      #0f0f0f;
-  --color-surface-2:    #141414;
-  --color-surface-3:    #1a1a1a;
-  --color-surface-4:    #222222;
-  --color-border:       #2a2a2a;
-  --color-divider:      #1e1e1e;
+  --color-bg:           #ffffff;
+  --color-surface:      #f5f5f5;
+  --color-surface-2:    #eeeeee;
+  --color-surface-3:    #e5e5e5;
+  --color-surface-4:    #d9d9d9;
+  --color-border:       #cccccc;
+  --color-divider:      #dddddd;
 
   /* Text */
-  --color-text:         #f0f0f0;
-  --color-text-muted:   #999999;
-  --color-text-faint:   #555555;
-  --color-text-inverse: #080808;
+  --color-text:         #111111;
+  --color-text-muted:   #555555;
+  --color-text-faint:   #999999;
+  --color-text-inverse: #ffffff;
 
-  /* Primary Accent — Deep Red */
+  /* Primary Accent  --  Deep Red */
   --color-primary:        #E31B1B;
   --color-primary-hover:  #FF2222;
   --color-primary-dark:   #B01414;
-  --color-primary-glow:   rgba(227, 27, 27, 0.15);
+  --color-primary-glow:   rgba(227, 27, 27, 0.10);
 
-  /* Type Scale — Fluid */
+  /* Type Scale  --  Fluid */
   --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
   --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
   --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
@@ -64,7 +64,7 @@
   --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
   --text-hero: clamp(3.5rem,   1rem    + 7vw,    9rem);
 
-  /* Spacing — 4px base */
+  /* Spacing  --  4px base */
   --space-1:  0.25rem;
   --space-2:  0.5rem;
   --space-3:  0.75rem;
@@ -96,10 +96,10 @@
   --transition: 200ms var(--ease-out);
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md:  0 4px 16px rgba(0,0,0,0.5);
-  --shadow-lg:  0 8px 32px rgba(0,0,0,0.6);
-  --shadow-red: 0 0 30px rgba(227, 27, 27, 0.2);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.10);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.15);
+  --shadow-red: 0 0 30px rgba(227, 27, 27, 0.12);
 
   /* Content Widths */
   --content-narrow:  640px;
@@ -197,7 +197,7 @@ button {
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
 }
 /* =====================================================
-   REDWOLF DIGITAL — COMPONENT STYLES
+   REDWOLF DIGITAL  --  COMPONENT STYLES
    ===================================================== */
 
 /* ---- UTILITIES ---- */
@@ -293,7 +293,7 @@ button {
 }
 
 .nav.scrolled {
-  background: rgba(8, 8, 8, 0.92);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom-color: var(--color-border);
@@ -316,7 +316,7 @@ button {
 }
 
 .nav__logo img {
-  height: 48px;
+  height: 144px;
   width: auto;
   display: block;
 }
@@ -443,7 +443,7 @@ button {
 }
 
 .footer__logo img {
-  height: 56px;
+  height: 168px;
   width: auto;
   margin-bottom: var(--space-4);
 }
@@ -771,8 +771,8 @@ button {
 }
 
 .service-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   background: var(--color-primary-glow);
   border: 1px solid rgba(227, 27, 27, 0.2);
   border-radius: var(--radius-md);
@@ -831,13 +831,13 @@ button {
 
 .stat-item {
   background: var(--color-surface);
-  padding: clamp(var(--space-6), 3vw, var(--space-10));
+  padding: clamp(var(--space-4), 2vw, var(--space-6));
   text-align: center;
 }
 
 .stat-item__number {
   font-family: var(--font-display);
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   color: var(--color-primary);
   line-height: 1;
   margin-bottom: var(--space-2);
@@ -865,7 +865,7 @@ button {
 .process-grid::before {
   content: '';
   position: absolute;
-  top: 28px;
+  top: 32px;
   left: 15%;
   right: 15%;
   height: 2px;
@@ -881,8 +881,8 @@ button {
 }
 
 .process-step__num {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   background: var(--color-primary);
   border-radius: var(--radius-full);
   display: flex;
@@ -1637,8 +1637,8 @@ button {
 
 /* ---- SCROLL REVEAL ---- */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: none;
   transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
 }
 
@@ -1686,12 +1686,14 @@ button {
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
     <a href="../../" class="nav__logo" aria-label="RedWolf Digital - Home">
-      <img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="48">
+      <img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="144">
     </a>
     <ul class="nav__links" role="list">
       <li><a href="../../services/">Services</a></li>
+      <li><a href="../../work/">Our Work</a></li>
       <li><a href="../../about/">About</a></li>
       <li><a href="../../blog/">Blog</a></li>
+      <li><a href="../../faq/">FAQ</a></li>
       <li><a href="../../contact/">Contact</a></li>
     </ul>
     <div class="nav__cta"><a href="../../contact/" class="btn btn--primary">Get Started</a></div>
@@ -1715,7 +1717,7 @@ button {
       </div>
       <p class="section-label">Serving Heath, TX</p>
       <h1 class="page-hero__title">Digital Marketing<br>in Heath, TX.</h1>
-      <p class="page-hero__subtitle">Expert local SEO, paid advertising, web design, and full-service digital marketing for businesses in Heath — a premier luxury community on Lake Ray Hubbard.</p>
+      <p class="page-hero__subtitle">Expert local SEO, paid advertising, web design, and full-service digital marketing for businesses in Heath  --  a premier luxury community on Lake Ray Hubbard.</p>
       <div style="display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap;">
         <a href="../../contact/" class="btn btn--primary btn--lg">Get a Free Strategy Session</a>
         <a href="../../services/" class="btn btn--outline btn--lg">View All Services</a>
@@ -1730,9 +1732,9 @@ button {
           <p class="section-label">Local Expertise</p>
           <h2 class="section-title">Digital Marketing Built<br>for Heath Businesses</h2>
           <div class="red-divider"></div>
-          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4);">Heath, Texas is a premier luxury bedroom community on the shores of Lake Ray Hubbard — home to high-income households with significant purchasing power. Businesses targeting the Heath market need a polished digital presence that resonates with discerning, quality-focused customers.</p>
+          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4);">Heath, Texas is a premier luxury bedroom community on the shores of Lake Ray Hubbard  --  home to high-income households with significant purchasing power. Businesses targeting the Heath market need a polished digital presence that resonates with discerning, quality-focused customers.</p>
           <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4);">RedWolf Digital, based in Forney, Texas, knows the Rockwall County market and the greater DFW area at a granular level that out-of-state agencies simply can't match. We understand your customers, your competitors, and the local search landscape.</p>
-          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-8);">Whether you're trying to rank on page one for "Heath services," running geo-targeted ads, or building your review profile — we have the strategy and execution to make it happen.</p>
+          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-8);">Whether you're trying to rank on page one for "Heath services," running geo-targeted ads, or building your review profile  --  we have the strategy and execution to make it happen.</p>
           <a href="../../contact/" class="btn btn--primary">Start a Project in Heath</a>
         </div>
         <div>
@@ -1792,34 +1794,44 @@ button {
   <div class="container">
     <div class="footer__grid">
       <div class="footer__logo-col">
-        <a href="../../" class="footer__logo"><img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="56"></a>
+        <a href="../../" class="footer__logo"><img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="168"></a>
         <p class="footer__tagline">Enterprise-level digital marketing for local businesses. Forney, TX.</p>
       </div>
       <div>
-        <h3 class="footer__heading">Services</h3>
+                <h3 class="footer__heading">Services</h3>
         <ul class="footer__links" role="list">
           <li><a href="../../services/#search-visibility">Local SEO</a></li>
           <li><a href="../../services/#paid-advertising">Paid Advertising</a></li>
           <li><a href="../../services/#website-presence">Website Design</a></li>
-          <li><a href="../../services/#reputation">Reputation</a></li>
+          <li><a href="../../services/#reputation">Reputation &amp; Reviews</a></li>
+          <li><a href="../../services/#social-media">Social Media</a></li>
+          <li><a href="../../services/#content-marketing">Content Marketing</a></li>
+          <li><a href="../../services/#lead-generation">Lead Generation</a></li>
+          <li><a href="../../services/#analytics">Analytics</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="footer__heading">Service Areas</h3>
+        <h3 class="footer__heading">Company</h3>
         <ul class="footer__links" role="list">
-          <li><a href="../forney/">Forney, TX</a></li>
-          <li><a href="../terrell/">Terrell, TX</a></li>
-          <li><a href="../rockwall/">Rockwall, TX</a></li>
-          <li><a href="../heath/">Heath, TX</a></li>
-          <li><a href="../fate/">Fate, TX</a></li>
-          <li><a href="../mesquite/">Mesquite, TX</a></li>
+          <li><a href="../../about/">About RedWolf Digital</a></li>
+          <li><a href="../../work/">Our Work</a></li>
+          <li><a href="../../blog/">Blog &amp; Resources</a></li>
+          <li><a href="../../contact/">Contact Us</a></li>
+          <li><a href="../../services/forney/">Forney, TX</a></li>
+          <li><a href="../../services/terrell/">Terrell, TX</a></li>
+          <li><a href="../../services/rockwall/">Rockwall, TX</a></li>
+          <li><a href="../../services/heath/">Heath, TX</a></li>
+          <li><a href="../../services/fate/">Fate, TX</a></li>
+          <li><a href="../../services/mesquite/">Mesquite, TX</a></li>
+          <li><a href="../../services/tyler/">Tyler, TX</a></li>
+          <li><a href="../../services/maybank/">Maybank, TX</a></li>
         </ul>
       </div>
       <div>
         <h3 class="footer__heading">Contact</h3>
         <div class="footer__contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Forney, TX &mdash; Serving Heath</span>
+          <span>Forney, TX  --  Serving Heath</span>
         </div>
         <div class="footer__contact-item" style="margin-top:var(--space-3);">
           <a href="../../contact/" class="btn btn--ghost">Get a Free Quote</a>
@@ -1836,7 +1848,7 @@ button {
 
 <script>
 /* =====================================================
-   REDWOLF DIGITAL — MAIN JS
+   REDWOLF DIGITAL  --  MAIN JS
    ===================================================== */
 
 document.addEventListener('DOMContentLoaded', function () {

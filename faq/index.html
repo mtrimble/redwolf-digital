@@ -17,11 +17,12 @@
 <link rel="author" href="https://www.perplexity.ai/computer">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Marketing in Mesquite, TX | RedWolf Digital</title>
-<meta name="description" content="RedWolf Digital provides expert local SEO, paid advertising, web design, and digital marketing services in Mesquite, TX. Get found online and grow your Mesquite business.">
-<meta property="og:title" content="Digital Marketing in Mesquite, TX | RedWolf Digital">
+<title>FAQ | Digital Marketing Questions Answered | RedWolf Digital Forney TX</title>
+<meta name="description" content="Get answers to the most common questions about digital marketing services, pricing, timelines, and results for Forney and DFW businesses. RedWolf Digital FAQ.">
+<meta property="og:title" content="FAQ | RedWolf Digital Forney TX">
+<meta property="og:description" content="Common questions about digital marketing services, pricing, and results for Forney and DFW businesses.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://redwolfdigital.com/services/mesquite/">
+<link rel="canonical" href="https://redwolfdigital.com/faq/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
@@ -1678,168 +1679,288 @@ button {
 .breadcrumb a:hover { color: var(--color-primary); }
 .breadcrumb span { color: var(--color-text-muted); }
 
+
+/* ===================================================== FAQ PAGE ===================================================== */
+.faq-item { border-bottom: 1px solid var(--color-border); }
+.faq-item:first-child { border-top: 1px solid var(--color-border); }
+.faq-question {
+  width: 100%; background: none; border: none;
+  padding: var(--space-6) 0;
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  font-family: var(--font-display); font-size: var(--text-lg);
+  letter-spacing: 0.03em; text-transform: uppercase;
+  color: var(--color-text); cursor: pointer; text-align: left;
+  transition: color var(--transition);
+}
+.faq-question:hover,
+.faq-question[aria-expanded="true"] { color: var(--color-primary); }
+.faq-icon { flex-shrink: 0; transition: transform 300ms var(--ease-out); }
+.faq-question[aria-expanded="true"] .faq-icon { transform: rotate(180deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 400ms var(--ease-out); }
+.faq-answer p, .faq-answer ul { padding-bottom: var(--space-6); color: var(--color-text-muted); line-height: 1.7; }
+.faq-answer ul { padding-left: var(--space-6); }
+.faq-answer li { margin-bottom: var(--space-2); }
+.faq-answer strong { color: var(--color-text); }
+
 </style>
 
 
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does digital marketing cost for a small business in Forney, TX?","acceptedAnswer":{"@type":"Answer","text":"Local SEO typically starts around $500 to $1,500/month. Paid advertising management starts around $750/month plus ad spend. Full-service packages range from $1,500 to $5,000/month."}},{"@type":"Question","name":"How long does SEO take to work?","acceptedAnswer":{"@type":"Answer","text":"Most local SEO campaigns show measurable improvement in 3 to 6 months. Significant results typically take 6 to 12 months of consistent effort."}},{"@type":"Question","name":"Do I need to sign a long-term contract?","acceptedAnswer":{"@type":"Answer","text":"No. RedWolf Digital operates on month-to-month agreements."}},{"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"RedWolf Digital serves Forney, Terrell, Rockwall, Heath, Fate, Mesquite, Kaufman, Sunnyvale, Tyler, Maybank, and the greater DFW area."}}],"creator":{"@type":"SoftwareApplication","name":"Perplexity Computer","url":"https://www.perplexity.ai/computer"}}</script>
 </head>
 <body>
+
+<!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="../../" class="nav__logo" aria-label="RedWolf Digital - Home">
-      <img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="144">
+    <a href="../" class="nav__logo" aria-label="RedWolf Digital  --  Home">
+      <img src="../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../assets/images/logo-placeholder.svg'" height="144">
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="../../services/">Services</a></li>
-      <li><a href="../../work/">Our Work</a></li>
-      <li><a href="../../about/">About</a></li>
-      <li><a href="../../blog/">Blog</a></li>
-      <li><a href="../../faq/">FAQ</a></li>
-      <li><a href="../../contact/">Contact</a></li>
+      <li><a href="../services/">Services</a></li>
+      <li><a href="../work/">Our Work</a></li>
+      <li><a href="../about/" class="active">About</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li><a href="../faq/">FAQ</a></li>
+      <li><a href="../contact/">Contact</a></li>
     </ul>
-    <div class="nav__cta"><a href="../../contact/" class="btn btn--primary">Get Started</a></div>
+    <div class="nav__cta"><a href="../contact/" class="btn btn--primary">Get Started</a></div>
     <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <nav class="nav__mobile" aria-label="Mobile navigation">
-  <a href="../../services/">Services</a><a href="../../about/">About</a><a href="../../blog/">Blog</a><a href="../../contact/">Contact</a>
-  <a href="../../contact/" class="btn btn--primary" style="margin-top:1rem;text-align:center;justify-content:center;">Get Started</a>
+  <a href="../services/">Services</a>
+  <a href="../about/">About</a>
+  <a href="../blog/">Blog</a>
+  <a href="../faq/">FAQ</a>
+  <a href="../contact/">Contact</a>
+  <a href="../contact/" class="btn btn--primary" style="margin-top:1rem;text-align:center;justify-content:center;">Get Started</a>
 </nav>
+
 <main>
-  <section class="page-hero area-hero">
+  <section class="page-hero">
     <div class="page-hero__bg-grid" aria-hidden="true"></div>
-    <div class="container page-hero__content">
+    <div class="container" style="position:relative;z-index:1;">
       <div class="breadcrumb">
-        <a href="../../">Home</a>
+        <a href="../">Home</a>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-        <a href="../../services/">Services</a>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-        <span>Mesquite, TX</span>
+        <span>FAQ</span>
       </div>
-      <p class="section-label">Serving Mesquite, TX</p>
-      <h1 class="page-hero__title">Digital Marketing<br>in Mesquite, TX.</h1>
-      <p class="page-hero__subtitle">Expert local SEO, paid advertising, web design, and full-service digital marketing for businesses in Mesquite  --  one of DFW's largest and most commercially active suburban cities.</p>
-      <div style="display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap;">
-        <a href="../../contact/" class="btn btn--primary btn--lg">Get a Free Strategy Session</a>
-        <a href="../../services/" class="btn btn--outline btn--lg">View All Services</a>
-      </div>
+      <p class="section-label">Got Questions?</p>
+      <h1 class="page-hero__title">Frequently Asked<br><span style="color:var(--color-primary);">Questions.</span></h1>
+      <p style="font-size:var(--text-base);color:var(--color-text-muted);max-width:560px;line-height:1.6;margin-top:var(--space-4);">Everything you want to know about digital marketing services, pricing, timelines, and what it's actually like to work with RedWolf Digital.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(var(--space-10),6vw,var(--space-16));align-items:start;" class="reveal">
-        <div>
-          <p class="section-label">Local Expertise</p>
-          <h2 class="section-title">Digital Marketing Built<br>for Mesquite Businesses</h2>
-          <div class="red-divider"></div>
-          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4);">Mesquite is one of the largest cities in the DFW area  --  a diverse, bustling community with a strong local business ecosystem. With significant foot traffic on Town East Blvd and Gus Thomasson Road, and a large population of active digital consumers, Mesquite is a high-volume market.</p>
-          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4);">RedWolf Digital, based in Forney, Texas, knows the Dallas County market and the greater DFW area at a granular level that out-of-state agencies simply can't match. We understand your customers, your competitors, and the local search landscape.</p>
-          <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-8);">Whether you're trying to rank on page one for "Mesquite services," running geo-targeted ads, or building your review profile  --  we have the strategy and execution to make it happen.</p>
-          <a href="../../contact/" class="btn btn--primary">Start a Project in Mesquite</a>
-        </div>
-        <div>
-          <div class="stats-grid" style="grid-template-columns:repeat(2,1fr);">
-            <div class="stat-item">
-              <div class="stat-item__number">145,000+</div>
-              <div class="stat-item__label">Residents</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-item__number">20+</div>
-              <div class="stat-item__label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-item__number">DAL</div>
-              <div class="stat-item__label">County</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-item__number">100%</div>
-              <div class="stat-item__label">Local Focus</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="container" style="max-width:800px;">
 
-  <section class="section section--tight" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
-    <div class="container">
-      <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-        <p class="section-label" style="justify-content:center;">Services for Mesquite</p>
-        <h2 class="section-title">What We Do in Mesquite, TX</h2>
+      <div style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">Working With Us</p>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How much does digital marketing cost for a small business in Forney, TX?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Digital marketing costs depend on which services you need and how competitive your market is. Here's a general range for DFW small businesses:</p><ul><li><strong>Local SEO</strong> -- $500 to $1,500/month depending on competition and scope</li><li><strong>Paid advertising management</strong> -- $750 to $2,000/month (plus your ad spend budget)</li><li><strong>Website design</strong> -- $2,500 to $8,000 for a full custom build</li><li><strong>Full-service packages</strong> -- $1,500 to $5,000/month covering SEO, paid ads, content, and reporting</li></ul><p>Every client gets a custom proposal based on their specific goals, market, and competition. <a href="../contact/" style="color:var(--color-primary);">Contact us</a> for a free strategy session and accurate quote.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do I have to sign a long-term contract?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No long-term contracts. RedWolf Digital operates on month-to-month agreements because we believe our results should earn your continued business -- not a contract obligation.</p><p>That said, SEO is a compounding investment. Clients who commit to 6 to 12 months consistently see significantly better returns. We'll always be transparent about where you stand and what to expect.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What does the onboarding process look like?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>After your free strategy session, here's what the first 30 days looks like:</p><ul><li><strong>Week 1</strong> -- Discovery call, access audit, full analysis of your current digital presence</li><li><strong>Week 2</strong> -- Strategy presentation with 90-day roadmap and keyword targets</li><li><strong>Week 3</strong> -- Campaign build-out and implementation begins</li><li><strong>Week 4</strong> -- Launch, baseline reporting dashboard live</li></ul><p>You'll have a dedicated point of contact and monthly reports in plain English -- no jargon, no vanity metrics.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will I own my accounts and data?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Always. Every account we build or manage -- Google Ads, Analytics, Search Console, social media profiles, your website -- is owned by you. We operate as administrators, never as owners. If you ever leave, you take everything with you.</p></div>
+        </div>
       </div>
-      <div class="area-features reveal">
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Local SEO for Mesquite:</strong> Google Business Profile optimization, local citation building, and Mesquite-specific keyword targeting.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Paid Advertising:</strong> Geofenced Google and Facebook campaigns targeting Mesquite zip codes and neighborhoods.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Website Design:</strong> Mobile-first websites built to convert Mesquite visitors into customers.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Reputation Management:</strong> Google review generation and management, building trust with Mesquite customers.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Social Media:</strong> Facebook, Instagram, and Nextdoor content and advertising targeting the Mesquite community.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Content Marketing:</strong> Blog posts and service area pages targeting Mesquite and Dallas County search intent.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Lead Generation:</strong> Lead capture optimization, CRM setup, and automated follow-up for Mesquite businesses.</p></div>
-        <div class="area-feature"><div class="area-feature__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div><p class="area-feature__text"><strong>Analytics & Reporting:</strong> Monthly reports showing your rankings, traffic, leads, and ROI in the Mesquite market.</p></div>
+
+      <div style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">SEO &amp; Local Search</p>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How long does SEO take to work?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Honest answer: SEO takes time, and anyone who promises first-page rankings in 30 days is not being straight with you.</p><ul><li><strong>Months 1 to 3</strong> -- Technical fixes, foundational content, Google Business Profile optimization. Rankings begin to shift.</li><li><strong>Months 3 to 6</strong> -- Measurable ranking improvements on target keywords. Traffic uptick visible in analytics.</li><li><strong>Months 6 to 12</strong> -- Consistent Local 3-Pack appearances, significant organic lead growth.</li><li><strong>12+ months</strong> -- Compounding returns that become increasingly difficult for competitors to displace.</li></ul></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What's the difference between local SEO and regular SEO?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Regular SEO focuses on ranking for broad keywords nationally. Local SEO focuses on ranking in your specific geographic market -- in Google Maps and location-based search results.</p><p>For a Forney plumber, ranking nationally for "plumber" is useless. Ranking #1 in Google Maps for "plumber Forney TX" is worth thousands of dollars a month. Local SEO is about owning your specific market -- and it's what we specialize in.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">My competitor is outranking me. What can you do about it?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>First step is a competitive audit -- understanding exactly why they're outranking you. It usually comes down to: more Google reviews, a stronger Google Business Profile, better backlinks, more service area content, or a faster website. Once we know the gap, we build a plan to close it. <a href="../contact/" style="color:var(--color-primary);">Let's talk.</a></p></div>
+        </div>
       </div>
+
+      <div style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">Paid Advertising</p>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How much should I spend on Google Ads?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>For most DFW local service businesses, a reasonable starting budget is $1,000 to $2,500/month in ad spend:</p><ul><li><strong>$500 to $1,000/month</strong> -- One service category, one city. Good for focused testing.</li><li><strong>$1,500 to $3,000/month</strong> -- Competitive coverage for 1 to 3 service categories across your core area.</li><li><strong>$3,000+/month</strong> -- Aggressive market presence, multiple services, broader DFW coverage.</li></ul><p>Management fees are separate. We'll recommend a budget based on your industry's cost-per-click and lead volume goals before you spend anything.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can you guarantee leads from paid advertising?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Any agency that guarantees a specific lead count is setting you up for disappointment. What we can guarantee is campaigns built, managed, and optimized to the highest standard -- with complete transparency into every dollar spent.</p><p>Well-structured Google Ads campaigns in competitive-but-not-saturated markets like Forney and Kaufman County consistently deliver strong results. We know what works here and we apply it from day one.</p></div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">Website Design</p>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How long does a website build take?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Most small business websites take 3 to 6 weeks from kickoff to launch. The biggest variable is content -- how quickly you provide photos, copy, and approvals. Larger sites or e-commerce builds take longer. We'll give you a specific timeline during your proposal.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will my website be built to rank on Google?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes -- every website we build is SEO-ready from day one: proper title tags and heading structure, optimized page speed, schema markup, mobile-first design, service area pages for each target city, and GA4 plus Search Console connected at launch. A website that isn't built for search is just an expensive brochure.</p></div>
+        </div>
+      </div>
+
+
+      <div id="lsa" style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">Google Local Services Ads</p>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What are Google Local Services Ads?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Google Local Services Ads (LSAs) are a pay-per-lead ad format that appears at the very top of Google search results -- above regular paid ads and above the Google Maps 3-Pack. They display your business name, star rating, phone number, and the "Google Guaranteed" verification badge. You only pay when a customer contacts you directly through the ad, not just when they click it.</p><p>For home service businesses in Forney and Kaufman County, LSAs are consistently the highest-ROI paid advertising channel available. <a href="../blog/posts/google-lsa-guide-dfw.html" style="color:var(--color-primary);">Read our complete LSA guide for Forney businesses.</a></p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How is Google Local Services Ads different from regular Google Ads?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The key difference is how you're charged. Regular Google Ads charge you every time someone clicks your ad, whether or not they ever contact you. LSAs only charge you when a customer actually calls, texts, or messages your business through the ad -- a cost-per-lead model instead of cost-per-click.</p><p>LSAs also appear above regular Google Ads in search results, and the Google Guaranteed badge provides a trust signal that standard ads don't have. The tradeoff is less targeting control -- you can't choose specific keywords, only service categories and geographic areas.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is the Google Guaranteed badge and how do I get it?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The Google Guaranteed badge is a green checkmark that appears next to your business name in LSA results. It tells customers that Google has verified your business licenses, insurance, and background checks. It also means Google will back up the quality of your work -- if a customer is unsatisfied, Google may refund them up to the lifetime cap of the job.</p><p>To earn the badge, your business must pass Google's verification process: submit your trade licenses, provide proof of general liability insurance, and complete background checks for all owners and employees who enter customer homes. The process typically takes 2 to 4 weeks.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How much do Google Local Services Ads cost in Forney and DFW?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>LSAs use a cost-per-lead model. Average costs in the DFW and Kaufman County market:</p><ul><li><strong>HVAC</strong> -- $40 to $80 per lead</li><li><strong>Plumbing</strong> -- $30 to $70 per lead</li><li><strong>Electrical</strong> -- $25 to $60 per lead</li><li><strong>Roofing</strong> -- $50 to $90 per lead</li><li><strong>Landscaping/lawn care</strong> -- $15 to $35 per lead</li><li><strong>House cleaning</strong> -- $10 to $25 per lead</li><li><strong>Pest control</strong> -- $20 to $40 per lead</li></ul><p>You can also dispute leads that don't match your service type and receive credits back, which lowers your effective cost-per-lead over time.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What service categories qualify for LSAs in Texas?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Common eligible categories for Forney and DFW businesses include: HVAC, plumbing, electrical, roofing, landscaping, pest control, house cleaning, general contracting, garage door services, locksmith, water damage restoration, tree services, moving companies, real estate agents, law firms, and more. Google regularly expands the list. Check eligibility for your specific category and ZIP code at the <a href="https://ads.google.com/local-services-ads" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">Google Local Services Ads platform</a>.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Where do I log in to manage my Google Local Services Ads?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>You can manage your LSA campaigns, review incoming leads, adjust your budget, and dispute invalid leads at <a href="https://ads.google.com/local-services-ads" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">ads.google.com/local-services-ads</a>. Google also offers a mobile app -- search "Local Services Ads" in the App Store or Google Play -- for managing leads from the field.</p><p>Need help setting up or managing your LSA account? <a href="../contact/" style="color:var(--color-primary);">RedWolf Digital handles LSA setup and management</a> for home service businesses across the Forney and DFW area.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can RedWolf Digital set up and manage my Google Local Services Ads?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. We handle the full LSA setup process -- profile creation, license and insurance submission, service area configuration, and budget strategy -- as well as ongoing management including lead review, dispute filing, and performance optimization. <a href="../contact/" style="color:var(--color-primary);">Get in touch</a> for a free consultation.</p></div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:var(--space-16);">
+        <p class="section-label" style="margin-bottom:var(--space-6);">Service Area</p>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What areas do you serve?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>RedWolf Digital is based in Forney, Texas and primarily serves Kaufman County and the greater DFW area -- including <a href="../services/forney/" style="color:var(--color-primary);">Forney</a>, <a href="../services/terrell/" style="color:var(--color-primary);">Terrell</a>, <a href="../services/rockwall/" style="color:var(--color-primary);">Rockwall</a>, <a href="../services/heath/" style="color:var(--color-primary);">Heath</a>, <a href="../services/fate/" style="color:var(--color-primary);">Fate</a>, <a href="../services/mesquite/" style="color:var(--color-primary);">Mesquite</a>, <a href="../services/tyler/" style="color:var(--color-primary);">Tyler</a>, and <a href="../services/maybank/" style="color:var(--color-primary);">Maybank</a>. We work with clients outside this area as well -- <a href="../contact/" style="color:var(--color-primary);">reach out</a> if you're not sure.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do you work with businesses outside of Forney and DFW?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. While our roots are in Forney and Kaufman County, our strategies work for local service businesses anywhere in Texas and beyond. If you need a team that takes your growth seriously, we're worth a conversation regardless of location.</p></div>
+        </div>
+      </div>
+
+      <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-12);text-align:center;">
+        <p class="section-label" style="justify-content:center;margin-bottom:var(--space-4);">Still Have Questions?</p>
+        <h2 style="font-family:var(--font-display);font-size:var(--text-2xl);text-transform:uppercase;margin-bottom:var(--space-4);">Let's Talk.</h2>
+        <p style="color:var(--color-text-muted);max-width:480px;margin:0 auto var(--space-8);line-height:1.6;">If you didn't find what you were looking for, we're happy to answer any question directly. No pitch, no pressure.</p>
+        <a href="../contact/" class="btn btn--primary btn--lg">Get a Free Strategy Session</a>
+      </div>
+
     </div>
   </section>
 
   <section class="cta-band">
     <div class="container">
       <div class="cta-band__inner">
-        <h2 class="cta-band__title">Ready to Dominate Mesquite?</h2>
-        <p class="cta-band__sub">Get a free digital marketing strategy session built specifically for your Mesquite, TX business.</p>
-        <a href="../../contact/" class="btn btn--outline btn--lg">Get Your Free Strategy Session</a>
+        <h2 class="cta-band__title">Ready to Put Your Marketing to Work?</h2>
+        <p class="cta-band__sub">Talk to the RedWolf Digital team about a custom strategy for your Forney or DFW business.</p>
+        <a href="../contact/" class="btn btn--outline btn--lg">Start a Project</a>
       </div>
     </div>
   </section>
+
 </main>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = this.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-item').forEach(el => {
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      el.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      this.setAttribute('aria-expanded', 'true');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+</main>
+
+<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__logo-col">
-        <a href="../../" class="footer__logo"><img src="../../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../../assets/images/logo-placeholder.svg'" height="168"></a>
+        <a href="../" class="footer__logo" aria-label="RedWolf Digital  --  Home">
+          <img src="../assets/images/logo.png" alt="RedWolf Digital" onerror="this.src='../assets/images/logo-placeholder.svg'" height="168">
+        </a>
         <p class="footer__tagline">Enterprise-level digital marketing for local businesses. Forney, TX.</p>
       </div>
       <div>
                 <h3 class="footer__heading">Services</h3>
         <ul class="footer__links" role="list">
-          <li><a href="../../services/#search-visibility">Local SEO</a></li>
-          <li><a href="../../services/#paid-advertising">Paid Advertising</a></li>
-          <li><a href="../../services/#website-presence">Website Design</a></li>
-          <li><a href="../../services/#reputation">Reputation &amp; Reviews</a></li>
-          <li><a href="../../services/#social-media">Social Media</a></li>
-          <li><a href="../../services/#content-marketing">Content Marketing</a></li>
-          <li><a href="../../services/#lead-generation">Lead Generation</a></li>
-          <li><a href="../../services/#analytics">Analytics</a></li>
+          <li><a href="../services/#search-visibility">Local SEO</a></li>
+          <li><a href="../services/#paid-advertising">Paid Advertising</a></li>
+          <li><a href="../services/#website-presence">Website Design</a></li>
+          <li><a href="../services/#reputation">Reputation &amp; Reviews</a></li>
+          <li><a href="../services/#social-media">Social Media</a></li>
+          <li><a href="../services/#content-marketing">Content Marketing</a></li>
+          <li><a href="../services/#lead-generation">Lead Generation</a></li>
+          <li><a href="../services/#analytics">Analytics</a></li>
         </ul>
       </div>
       <div>
         <h3 class="footer__heading">Company</h3>
         <ul class="footer__links" role="list">
-          <li><a href="../../about/">About RedWolf Digital</a></li>
-          <li><a href="../../work/">Our Work</a></li>
-          <li><a href="../../blog/">Blog &amp; Resources</a></li>
-          <li><a href="../../contact/">Contact Us</a></li>
-          <li><a href="../../services/forney/">Forney, TX</a></li>
-          <li><a href="../../services/terrell/">Terrell, TX</a></li>
-          <li><a href="../../services/rockwall/">Rockwall, TX</a></li>
-          <li><a href="../../services/heath/">Heath, TX</a></li>
-          <li><a href="../../services/fate/">Fate, TX</a></li>
-          <li><a href="../../services/mesquite/">Mesquite, TX</a></li>
-          <li><a href="../../services/tyler/">Tyler, TX</a></li>
-          <li><a href="../../services/maybank/">Maybank, TX</a></li>
+          <li><a href="../about/">About RedWolf Digital</a></li>
+          <li><a href="../work/">Our Work</a></li>
+          <li><a href="../blog/">Blog &amp; Resources</a></li>
+          <li><a href="../contact/">Contact Us</a></li>
+          <li><a href="../services/forney/">Forney, TX</a></li>
+          <li><a href="../services/terrell/">Terrell, TX</a></li>
+          <li><a href="../services/rockwall/">Rockwall, TX</a></li>
+          <li><a href="../services/heath/">Heath, TX</a></li>
+          <li><a href="../services/fate/">Fate, TX</a></li>
+          <li><a href="../services/mesquite/">Mesquite, TX</a></li>
+          <li><a href="../services/tyler/">Tyler, TX</a></li>
+          <li><a href="../services/maybank/">Maybank, TX</a></li>
         </ul>
       </div>
       <div>
         <h3 class="footer__heading">Contact</h3>
         <div class="footer__contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Forney, TX  --  Serving Mesquite</span>
+          <span>Forney, Texas 75126</span>
         </div>
-        <div class="footer__contact-item" style="margin-top:var(--space-3);">
-          <a href="../../contact/" class="btn btn--ghost">Get a Free Quote</a>
+        <div class="footer__contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="../contact/">Start a project</a>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>&copy; <span id="year"></span> RedWolf Digital. All rights reserved.</span>
+      <span>© <span id="year"></span> RedWolf Digital. All rights reserved. Forney, TX.</span>
       <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
     </div>
   </div>
