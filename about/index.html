@@ -1214,10 +1214,7 @@ button {
 
 /* ---- ABOUT PAGE ---- */
 .about-bio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(var(--space-8), 6vw, var(--space-16));
-  align-items: start;
+  max-width: 800px;
 }
 
 .about-bio__image {
@@ -1732,13 +1729,6 @@ button {
   <section class="section" id="about-founder">
     <div class="container">
       <div class="about-bio reveal">
-        <div class="about-bio__image">
-          <div class="about-bio__image-placeholder">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Photo of Marc Trimble</span>
-            <span style="font-size:var(--text-xs);color:var(--color-text-faint);text-align:center;max-width:180px;">Replace logo.png with your actual photo via the CMS at /admin</span>
-          </div>
-        </div>
         <div class="about-bio__text">
           <p class="section-label">Founder & Principal</p>
           <h2 class="section-title">Marc Trimble</h2>
